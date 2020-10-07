@@ -157,7 +157,7 @@ venv.bak/
 dmypy.json
 
 #Migrations
-/catalog/migrations/*initial.py
+/catalog/migrations/0*initial.py
 
 #SQL base
 db.sqlite3
