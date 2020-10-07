@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Набор тестов от KazTest за 2020 год</title>
+    {% load static %} 
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+    
+<body>
+    <div class="header">
+        <img src="{% static 'jpg/Logo_Qaztest.png' %}">
+        <div class="header-right">
+            <ul>
+                <li><lit-font>Тел.:+7 (7172)</lit-font> 69 52 96, 69 52 85, 69 52 84</li>
+                <li><lit-font>Факс: +7 (7172)</lit-font> 69 52 85</li>
+                <li><lit-font>E-mail:</lit-font> info@kazakhtest.kz</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Наборы актульных тестов на 2020 год.</h3>
+        <ul>
+            <li><a href="{% url 'archive' %}/?action=archiv1&email={{email}}" target="_blank">Архив 1</a></li>
+            <li><a href="{% url 'archive' %}/?action=archiv2&email={{email}}" target="_blank">Архив 2</a></li>
+            <li><a href="{% url 'archive' %}/?action=archiv3&email={{email}}" target="_blank">Архив 3</a></li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>© Национальный центр тестирования</p>
+    </div>
+</body>
+</html>
